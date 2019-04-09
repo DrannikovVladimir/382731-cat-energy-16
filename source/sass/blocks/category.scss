@@ -1,0 +1,16 @@
+.category {
+  background-color: $bg-color;
+}
+.category__title {
+  padding-left: 70px;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 300;
+}
+.category__text {
+  @include content-text(14px, 18px);
+}
+.category__link {
+  line-height: 16px;
+}
