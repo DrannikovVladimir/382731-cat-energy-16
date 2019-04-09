@@ -19,7 +19,7 @@ input[type="radio"].visually-hidden {
 }
 
 @mixin content-text($font-size:14px, $line-height: 18px) {
-  font-family: 'Arial', 'Tahoma', sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   color: $text-color;

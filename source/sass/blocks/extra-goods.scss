@@ -4,15 +4,17 @@
 
   list-style: none;
 }
+
 .extra-goods__title {
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
 }
+
 .extra-goods__all {
   width: 280px;
   height: 289px;
 
   color: $basic-color;
-  background-image: url('../img/gift-photo-mobile@1x.jpg');
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
 }

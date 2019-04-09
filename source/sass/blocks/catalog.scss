@@ -6,15 +6,18 @@
   line-height: 60px;
   text-transform: none;
 }
+
 .catalog__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
+
 .catalog__slogan {
   @include content-text(12px, 16px);
 }
+
 .catalog__button {
   color: $text-color;
 

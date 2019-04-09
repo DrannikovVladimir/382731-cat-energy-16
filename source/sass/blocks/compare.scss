@@ -4,6 +4,7 @@
 
   background-color: $bg-color;
 }
+
 .compare__title {
   margin-bottom: 30px;
 
@@ -12,18 +13,22 @@
   line-height: 60px;
   text-transform: none;
 }
+
 .compare__text {
   margin-bottom: 20px;
 
   @include content-text;
 }
+
 .compare__list-title {
   font-size: 24px;
   line-height: 24px;
 }
+
 .compare__list-description {
   @include content-text(12px, 12px);
 }
+
 .compare__price {
   font-size: 14px;
   text-align: center;
