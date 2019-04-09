@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -34,77 +35,77 @@
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-form__list-wrapper">
             <legend class="main-form__list-title visually-hidden">Параметры кота</legend>
-            <ul class="main-form__list">
-              <li class="main-form__item">
-                <label class="main-form__label" for="name-field">Имя:*</label>
-                <input class="main-form__input" id="name-field" type="text" name="cat-name" value="БАРСИК">
+            <ul class="main-form__list list-contacts">
+              <li class="list-contacts__item">
+                <label class="list-contacts__label" for="name-field">Имя:*</label>
+                <input class="list-contacts__input" id="name-field" type="text" name="cat-name" value="БАРСИК">
               </li>
-              <li class="main-form__item">
-                <label class="main-form__label" for="weight-field">Вес (кг):*</label>
-                <input class="main-form__input" id="weight-field" type="text" name="cat-weight" value="7">
+              <li class="list-contacts__item">
+                <label class="list-contacts__label" for="weight-field">Вес (кг):*</label>
+                <input class="list-contacts__input" id="weight-field" type="text" name="cat-weight" value="7">
               </li>
-              <li class="main-form__item">
-                <label class="main-form__label" for="age-field">Возраст (лет):</label>
-                <input class="main-form__input" id="age-field" type="text" name="cat-age" value="7">
+              <li class="list-contacts__item">
+                <label class="list-contacts__label" for="age-field">Возраст (лет):</label>
+                <input class="list-contacts__input" id="age-field" type="text" name="cat-age" value="7">
               </li>
             </ul>
           </fieldset>
           <fieldset class="main-form__list-wrapper">
             <legend class="main-form__list-title visually-hidden">Ваша цель</legend>
-            <ul class="main-form__list">
-              <li class="main-form__item">
-                <input class="main-form__radio" id="weight-loss" type="radio" name="cat-target" value="weight-loss" checked>
-                <label class="main-form__label" for="weight-loss">Похудение</label>
+            <ul class="main-form__list list-check">
+              <li class="list-check__item">
+                <input class="list-check__radio" id="weight-loss" type="radio" name="cat-target" value="weight-loss" checked>
+                <label class="list-check__label" for="weight-loss">Похудение</label>
               </li>
-              <li class="main-form__item">
-                <input class="main-form__radio" id="weight-gain" type="radio" name="cat-target" value="weight-gain">
-                <label class="main-form__label" for="weight-gain">Набор массы</label>
+              <li class="list-check__item">
+                <input class="list-check__radio" id="weight-gain" type="radio" name="cat-target" value="weight-gain">
+                <label class="list-check__label" for="weight-gain">Набор массы</label>
               </li>
-              <li class="main-form__item">
-                <input class="main-form__radio" id="do-not-know" type="radio" name="cat-target" value="do-not-know">
-                <label class="main-form__label" for="do-not-know">Не знаю (нужен ваш совет)</label>
+              <li class="list-check__item">
+                <input class="list-check__radio" id="do-not-know" type="radio" name="cat-target" value="do-not-know">
+                <label class="list-check__label" for="do-not-know">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="main-form__list-wrapper">
             <legend class="main-form__list-title">Контактные данные (владельца кота)</legend>
-            <ul class="main-form__list">
-              <li class="main-form__item">
-                <label class="main-form__label" for="email-field">e-mail:*</label>
-                <input class="main-form__input" id="email-field" type="text" name="email" value="kuklachev@gmail.com">
+            <ul class="main-form__list list-contacts">
+              <li class="list-contacts__item">
+                <label class="list-contacts__label" for="email-field">e-mail:*</label>
+                <input class="list-contacts__input" id="email-field" type="text" name="email" value="kuklachev@gmail.com">
               </li>
-              <li class="main-form__item">
-                <label class="main-form__label" for="phone-field">Телефон:*</label>
-                <input class="main-form__input" id="phone-field" type="text" name="phone" value="8 (960) 900-60-90">
+              <li class="list-contacts__item">
+                <label class="list-contacts__label" for="phone-field">Телефон:*</label>
+                <input class="list-contacts__input" id="phone-field" type="text" name="phone" value="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
           <fieldset class="main-form__list-wrapper">
             <legend class="main-form__title">Комментарий</legend>
-            <ul class="main-form__list">
-              <li class="main-form__item">
-                <textarea class="main-form__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
+            <ul class="main-form__list list-message">
+              <li class="list-message__item">
+                <textarea class="list-message__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
               </li>
             </ul>
           </fieldset>
           <fieldset class="main-form__list-wrapper">
             <legend class="main-form__title">Дополнительно</legend>
-            <ul class="main-form__list">
-              <li class="main-form__item">
-                <input class="main-form__checkbox" id="sugaSubstitute" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
-                <label class="main-form__label" for="sugaSubstitute">Сахарозаменитель</label>
+            <ul class="main-form__list list-check">
+              <li class="list-check__item">
+                <input class="list-check__checkbox" id="sugaSubstitute" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
+                <label class="list-check__label" for="sugaSubstitute">Сахарозаменитель</label>
               </li>
-              <li class="main-form__item">
-                <input class="main-form__checkbox" id="water" type="checkbox" name="water" value="water">
-                <label class="main-form__label" for="water">Питьевая вода</label>
+              <li class="list-check__item">
+                <input class="list-check__checkbox" id="water" type="checkbox" name="water" value="water">
+                <label class="list-check__label" for="water">Питьевая вода</label>
               </li>
-              <li class="main-form__item">
-                <input class="main-form__checkbox" id="milk" type="checkbox" name="milk" value="milk">
-                <label class="main-form__label" for="milk">Молоко</label>
+              <li class="list-check__item">
+                <input class="list-check__checkbox" id="milk" type="checkbox" name="milk" value="milk">
+                <label class="list-check__label" for="milk">Молоко</label>
               </li>
-              <li class="main-form__item">
-                <input class="main-form__checkbox" id="vitamins" type="checkbox" name="vitamins" value="vitamins">
-                <label class="main-form__label" for="vitamins">Витамины</label>
+              <li class="list-check__item">
+                <input class="list-check__checkbox" id="vitamins" type="checkbox" name="vitamins" value="vitamins">
+                <label class="list-check__label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>

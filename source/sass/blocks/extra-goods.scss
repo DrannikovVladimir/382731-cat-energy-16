@@ -1,0 +1,20 @@
+.extra-goods__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.extra-goods__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.extra-goods__all {
+  width: 280px;
+  height: 289px;
+
+  color: $basic-color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+}

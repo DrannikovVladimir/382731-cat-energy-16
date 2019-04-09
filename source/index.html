@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -21,7 +22,7 @@
             <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link" href="forms.html">Подбор программы</a>
+            <a class="site-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -32,21 +33,21 @@
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__subtitle">Занялся собой? Займись котом!</p>
         <img src="http://placehold.it/150x100" alt="Функциональное питание" class="intro__image" width="280" height="270">
-        <button class="intro__button" type="button">Подобрать программу</button>
+        <button class="button intro__button" type="button">Подобрать программу</button>
       </section>
 
       <section class="categories">
         <h2 class="visually-hidden">Программы на выбор</h2>
         <ul class="categories__list">
-          <li class="categories__item">
-            <h3 class="categories__item-title">Похудение</h3>
-            <p class="categories__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="categories__item-link" href="catalog.html">Каталог slim</a>
+          <li class="categories__item category">
+            <h3 class="category__title">Похудение</h3>
+            <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="category__link" href="catalog.html">Каталог slim</a>
           </li>
-          <li class="categories__item">
-            <h3 class="categories__item-title">Набор массы</h3>
-            <p class="categories__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="categories__item-link" href="catalog.html">Каталог pro</a>
+          <li class="categories__item category">
+            <h3 class="category__title">Набор массы</h3>
+            <p class="category__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="category__link" href="catalog.html">Каталог pro</a>
           </li>
         </ul>
       </section>
@@ -55,28 +56,32 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <p class="advantages__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>
 
       <section class="compare">
         <h2 class="compare__title">Живой пример</h2>
-        <p class="compare__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <p class="compare__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <dl class="compare__list">
-          <dt>5к<span>снижение веса</span></dt>
-          <dd>60 дней<span>затрачено времени</span></dd>
+          <dt class="compare__list-title">5 кг</dt>
+          <dd class="compare__list-description">снижение веса</dd>
         </dl>
-        <p class="compare__price">затрраты на питание: 15 000 руб.</p>
+        <dl class="compare__list">
+          <dt class="compare__list-title">60 дней</dt>
+          <dd class="compare__list-description">Затрачено времени</dd>
+        </dl>
+        <p class="compare__price">Затраты на питание: 15 000 руб.</p>
         <img class="compare__image" src="http://placehold.it/150x100" alt="Кот">
         <div class="compare__button-wrapper">
           <p>Было</p>
@@ -100,19 +105,19 @@
       <a class="page-footer__logo-link">
         <img class="page-footer__logo-img" src="http://placehold.it/150x100" alt="Логотип" width="128" height="24">
       </a>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="http://wwww.vk.com">
+      <ul class="page-footer__social social-list">
+        <li class="social-item">
+          <a class="social-link" href="http://wwww.vk.com">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="http://wwww.instagram.com">
+        <li class="social-item">
+          <a class="social-link" href="http://wwww.instagram.com">
             <span class="visually-hidden">Инстаграмм</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="http://wwww.facebook.com">
+        <li class="social-item">
+          <a class="social-link" href="http://wwww.facebook.com">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>

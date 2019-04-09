@@ -1,0 +1,7 @@
+.page-footer {
+  background-color: $bg-color;
+}
+
+.page-footer__copyright {
+  @include content-text(16px, 16px);
+}
