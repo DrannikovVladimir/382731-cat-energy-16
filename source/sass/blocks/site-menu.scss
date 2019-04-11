@@ -12,3 +12,18 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.site-menu__link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-menu__active {
+  border-bottom: 2px solid $accent-color;
+}

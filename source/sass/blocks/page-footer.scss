@@ -1,7 +1,23 @@
+.page-footer__logo-link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 .page-footer {
   background-color: $bg-color;
 }
 
 .page-footer__copyright {
   @include content-text(16px, 16px);
+}
+
+.page-footer__htmlacademy {
+  &:active {
+    opacity: 0.3;
+  }
 }

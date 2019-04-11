@@ -1,5 +1,7 @@
 .list-message__textarea {
-  border: 1px solid $border-color;
+  height: 150px;
+  padding: 15px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   font-family: inherit;
   line-height: 18px;
@@ -7,4 +9,12 @@
   font-weight: 300;
   color: $text-color;
   text-transform: uppercase;
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1)
+  }
+
+  &:focus {
+    border: 2px solid rgba(0, 0, 0, 1);
+  }
 }

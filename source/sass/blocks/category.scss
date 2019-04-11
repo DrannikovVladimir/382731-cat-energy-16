@@ -16,4 +16,7 @@
 
 .category__link {
   line-height: 16px;
+  &:active {
+    opacity: 0.3;
+  }
 }
