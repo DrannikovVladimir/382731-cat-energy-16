@@ -1,0 +1,26 @@
+.main-form__list-wrapper {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+}
+
+.main-form__required-fields {
+  @include content-text(14px, 16px);
+}
+
+.main-form__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.main-form__list-title {
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: none;
+}
