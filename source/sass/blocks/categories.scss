@@ -17,3 +17,15 @@
     padding: 0 30px;
   }
 }
+
+@media (min-width: 1300px) {
+  .categories__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
