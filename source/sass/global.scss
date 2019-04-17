@@ -28,6 +28,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  border: 1px solid lime;
 }
 
 body {

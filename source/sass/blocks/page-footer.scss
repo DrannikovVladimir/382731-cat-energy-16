@@ -1,3 +1,9 @@
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .page-footer__logo-link {
   &:hover,
   &:focus {
@@ -20,5 +26,39 @@
 .page-footer__htmlacademy {
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .page-footer__logo-link {
+    width: 132px;
+  }
+
+  .page-footer__social {
+    width: 126px;
+  }
+
+  .page-footer__bottom {
+    width: 162px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-footer__wrapper {
+    width: 1300px;
+    padding: 0 40px;
   }
 }
