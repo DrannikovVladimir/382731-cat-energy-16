@@ -1,6 +1,18 @@
+.extra-good {
+  padding: 20px 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .extra-good__title {
+  margin: 0;
+  margin-bottom: 15px;
   line-height: 16px;
   font-weight: 300;
+}
+
+.extra-good__list {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .extra-good__item {

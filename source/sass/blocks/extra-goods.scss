@@ -1,3 +1,9 @@
+.extra-goods__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .extra-goods__list {
   margin: 0;
   padding: 0;
@@ -14,7 +20,24 @@
 .extra-goods__all {
   width: 280px;
   height: 289px;
+  padding-top: 180px;
 
+
+  @include content-text(16px, 20px);
   color: $basic-color;
+  text-align: center;
+
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+}
+
+.extra-goods__all-slogan {
+  width: 180px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .extra-goods__wrapper {
+    width: 768px;
+    padding: 0 30px;
+  }
 }
