@@ -11,6 +11,12 @@
   background-size: 320px, 305px;
 }
 
+.intro__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .intro__title {
   width: 280px;
   margin: 0 auto 20px;
@@ -34,7 +40,7 @@
 
 @media (min-width: 768px) {
   .intro {
-    padding-top: 20px;
+    padding-top: 40px;
     min-height: 840px;
     text-align: left;
     color: $title-color;
@@ -46,7 +52,11 @@
 
   .intro__wrapper {
     width: 768px;
-    padding: 0 120px;
+    padding: 0 30px;
+  }
+
+  .intro__inner-wrapper {
+    padding-left: 90px;
   }
 
   .intro__title {
@@ -55,6 +65,10 @@
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .intro__button {
+    width: 245px;
   }
 
   .intro__subtitle {

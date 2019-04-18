@@ -16,5 +16,55 @@
 }
 
 .extra-good__item {
+  margin: 0;
+
   @include content-text(14px, 14px);
+}
+
+@media (min-width: 768px) {
+  .extra-good__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .extra-good__list {
+    margin: 0;
+  }
+
+  .extra-good__title {
+    margin: 0;
+    line-height: 20px;
+  }
+
+  .extra-good__button {
+    width: 100%;
+  }
+
+  .extra-good__item {
+    @include content-text(16px, 20px);
+
+    &--text-right {
+      width: 95px;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .extra-good {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 0;
+  }
+
+  .extra-good__button {
+    min-width: auto;
+    width: 245px;
+  }
+
+  .extra-good__content {
+    width: 610px;
+  }
 }
