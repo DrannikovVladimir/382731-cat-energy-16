@@ -27,3 +27,22 @@
 .site-menu__active {
   border-bottom: 2px solid $accent-color;
 }
+
+@media (min-width: 768px) {
+  .site-menu {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1300px) {
+  .site-menu {
+    font-size: 20px;
+    color: $basic-color;
+  }
+
+  .site-menu__active {
+    border-bottom-color: $basic-color;
+  }
+}
