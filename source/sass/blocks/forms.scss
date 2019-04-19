@@ -1,3 +1,9 @@
+.forms__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .forms__title {
   font-size: 36px;
   line-height: 60px;
@@ -10,4 +16,34 @@
 
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .forms__wrapper {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .forms__title {
+    font-size: 60px;
+  }
+
+  .forms__subtitle {
+    width: 390px;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .forms__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .forms__subtitle {
+    padding-left: 0;
+  }
 }
