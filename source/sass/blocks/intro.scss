@@ -1,7 +1,7 @@
 .intro {
-  display: flex;
-  flex-direction: column;
   min-height: 480px;
+  padding-top: 30px;
+
   color: $basic-color;
   text-align: center;
 
@@ -19,7 +19,7 @@
 
 .intro__title {
   width: 280px;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
 
   font-size: 36px;
   font-weight: 300;
@@ -28,20 +28,21 @@
 }
 
 .intro__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 280px;
 
   font-size: 14px;
   line-height: 14px;
 }
 
 .intro__button {
-  margin-top: auto;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .intro {
-    padding-top: 40px;
+    padding-top: 50px;
     min-height: 840px;
+
     text-align: left;
     color: $title-color;
 
@@ -67,13 +68,14 @@
     line-height: 60px;
   }
 
-  .intro__button {
-    width: 245px;
-  }
-
   .intro__subtitle {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .intro__button {
+    width: 245px;
   }
 }
 
@@ -83,12 +85,12 @@
     min-height: 600px;
 
     background-image: url("../img/index-can-desktop@1x.png");
-    background-position: 420px center;
+    background-position: 550px center;
     background-size: 552px 499px;
   }
 
   .intro__wrapper {
     width: 1300px;
-    padding: 0 200px;
+    padding: 0 40px;
   }
 }

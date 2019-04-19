@@ -44,8 +44,10 @@
 
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-position: right center;
     background-size: 720px 696px;
+
+    overflow: hidden;
   }
 
   .page-header__wrapper {
