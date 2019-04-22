@@ -10,29 +10,28 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="page-header__nav">
-          <div class="page-header__nav-wrapper">
-            <a>
-              <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип" width="33" height="38">
-            </a>
-            <img class="page-header__logo-text" src="http://placehold.it/150x100" alt="Описание логотипа" width="101" height="18">
-            <button class="page-header__menu" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </div>
-          <ul class="page-header__list site-menu">
-            <li class="site-menu__item">
-              <a class="site-menu__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-menu__item">
-              <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-menu__item">
-              <a class="site-menu__link site-menu__active">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип" width="193" height="45">
+        </a>
       </div>
+      <nav class="main-nav main-nav--opened">
+        <div class="main-nav__toggle-wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="main-nav__list site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-menu__item site-menu__item--active">
+            <a class="site-menu__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -167,5 +166,20 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
