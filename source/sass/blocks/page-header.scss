@@ -1,3 +1,14 @@
+.page-header {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom 175px;
+  background-size: 320px, 305px;
+
+  &--bg-no {
+    background: none;
+  }
+}
+
 .page-header__wrapper {
   position: relative;
 
@@ -32,7 +43,7 @@
     display: flex;
     justify-content: space-between;
     width: 768px;
-    padding: 0 30px;
+    padding: 24px 30px;
     margin: 0 auto;
   }
 
@@ -45,19 +56,50 @@
 
 @media (min-width: 1300px) {
   .page-header {
+    position: relative;
+
     margin-bottom: 80px;
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 50%;
+    background: none;
 
-    overflow: hidden;
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 50%;
+      height: 100%;
+
+      background-color: $accent-color;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: cover;
+
+      z-index: -1;
+    }
+
+    &--bg-no {
+      &::before {
+        background: none;
+      }
+    }
+  }
+
+  .page-header__bg-image {
+    width: 1300px;
+    margin: 0 auto;
+
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 487px 160px;
   }
 
   .page-header__container {
     width: 1300px;
-    padding: 0 40px;
+    padding: 34px 40px 0;
   }
 
   .page-header__wrapper {

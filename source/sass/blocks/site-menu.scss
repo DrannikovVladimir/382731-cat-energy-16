@@ -66,6 +66,10 @@
 
     font-size: 20px;
     color: $basic-color;
+
+    &--color-black {
+      color: $text-color;
+    }
   }
 
   .site-menu__item--active .site-menu__link {

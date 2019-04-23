@@ -1,11 +1,24 @@
 .social-list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 127px;
+  margin: 0 auto;
+  padding: 22px 0;
 
   list-style: none;
 }
 
 .social-link {
+  &:hover,
+  &:focus {
+    .social-list__icon {
+      path {
+        fill: $accent-color;
+      }
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }
