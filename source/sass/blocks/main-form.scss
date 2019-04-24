@@ -1,14 +1,29 @@
 .main-form__list-wrapper {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 40px;
-  padding: 0;
+  padding: 0 20px;
   border: none;
+
+  &--border {
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 .main-form__required-fields {
   margin: 0;
 
   @include content-text(14px, 16px);
+}
+
+.main-form__list-inner-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-form__list {

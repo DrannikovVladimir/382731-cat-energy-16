@@ -1,10 +1,15 @@
-.catalog__wrapper {
+.catalog {
+  padding-top: 20px;
+}
+
+.catalog__title-wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .catalog__title {
+  margin: 0;
   margin-bottom: 30px;
 
   font-size: 36px;
@@ -20,15 +25,31 @@
   list-style: none;
 }
 
+.catalog__item {
+  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+
+  &:first-child {
+    border-top: 1px solid #ededed;
+  }
+}
+
 @media (min-width: 768px) {
   .catalog__wrapper {
     width: 768px;
+    margin: 0 auto;
     padding: 0 30px;
   }
 
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .catalog__title-wrapper {
+    width: auto;
+    padding: 0;
   }
 
   .catalog__title {

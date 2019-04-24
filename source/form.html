@@ -38,9 +38,11 @@
 
     <main class="page-main">
       <section class="forms">
-        <div class="forms__wrapper">
-          <h2 class="forms__title">Подбор программы</h2>
-          <p class="forms__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="forms__container">
+          <div class="forms__title-wrapper">
+            <h2 class="forms__title">Подбор программы</h2>
+            <p class="forms__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          </div>
           <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="main-form__list-wrapper main-form__list-wrapper--name">
               <legend class="main-form__list-title visually-hidden">Параметры кота</legend>
@@ -60,21 +62,23 @@
               </ul>
             </fieldset>
             <fieldset class="main-form__list-wrapper main-form__list-wrapper--border">
-              <legend class="main-form__list-title visually-hidden">Ваша цель</legend>
-              <ul class="main-form__list list-check list-check--border">
-                <li class="list-check__item">
-                  <input class="list-check__radio visually-hidden" id="weight-loss" type="radio" name="cat-target" value="weight-loss" checked>
-                  <label class="list-check__label list-check__label--circle" for="weight-loss">Похудение</label>
-                </li>
-                <li class="list-check__item">
-                  <input class="list-check__radio visually-hidden" id="weight-gain" type="radio" name="cat-target" value="weight-gain">
-                  <label class="list-check__label list-check__label--circle" for="weight-gain">Набор массы</label>
-                </li>
-                <li class="list-check__item">
-                  <input class="list-check__radio visually-hidden" id="do-not-know" type="radio" name="cat-target" value="do-not-know">
-                  <label class="list-check__label list-check__label--circle" for="do-not-know">Не знаю (нужен ваш совет)</label>
-                </li>
-              </ul>
+              <div class="main-form__list-inner-wrapper">
+                <legend class="main-form__list-title visually-hidden">Ваша цель</legend>
+                <ul class="main-form__list list-check list-check--border">
+                  <li class="list-check__item">
+                    <input class="list-check__radio visually-hidden" id="weight-loss" type="radio" name="cat-target" value="weight-loss" checked>
+                    <label class="list-check__label list-check__label--circle" for="weight-loss">Похудение</label>
+                  </li>
+                  <li class="list-check__item">
+                    <input class="list-check__radio visually-hidden" id="weight-gain" type="radio" name="cat-target" value="weight-gain">
+                    <label class="list-check__label list-check__label--circle" for="weight-gain">Набор массы</label>
+                  </li>
+                  <li class="list-check__item">
+                    <input class="list-check__radio visually-hidden" id="do-not-know" type="radio" name="cat-target" value="do-not-know">
+                    <label class="list-check__label list-check__label--circle" for="do-not-know">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <fieldset class="main-form__list-wrapper main-form__list-wrapper--owner">
               <legend class="main-form__list-title">Контактные данные (владельца кота)</legend>

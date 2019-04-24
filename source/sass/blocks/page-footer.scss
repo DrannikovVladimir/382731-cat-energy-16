@@ -40,6 +40,13 @@
   width: 162px;
   margin: 0 auto;
 
+  &:hover,
+  &:focus {
+    .page-footer__htmlacademy-icon path {
+      fill: $accent-color;
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }

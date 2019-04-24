@@ -1,3 +1,10 @@
+.extra-goods {
+  margin-bottom: 40px;
+  padding-top: 40px;
+
+  overflow: hidden;
+}
+
 .extra-goods__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -6,19 +13,43 @@
 
 .extra-goods__list {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 
   list-style: none;
 }
 
 .extra-goods__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 40px;
+
   font-size: 24px;
   font-weight: 300;
   line-height: 24px;
   text-transform: none;
+
+  background-color: $basic-color;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: 250px;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: $accent-color;
+
+    z-index: 0;
+  }
 }
 
 .extra-goods__all {
+  position: relative;
   width: 280px;
   height: 289px;
   padding-top: 180px;
@@ -31,9 +62,26 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 289px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 55px;
+    left: 113px;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px 60px;
+  }
 }
 
 .extra-goods__all-slogan {
+  position: relative;
   width: 180px;
   margin: 0 auto;
 }
@@ -45,10 +93,31 @@
   }
 
   .extra-goods__title {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
+    padding: 0 40px;
 
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      top: 22px;
+      left: 420px;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 22px;
+      right: 710px;
+
+      width: 100%;
+      height: 3px;
+
+      background-color: $accent-color;
+
+      z-index: 0;
+    }
   }
 
   .extra-goods__list {
@@ -66,6 +135,11 @@
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: 708px 208px;
+
+    &::before {
+      top: 65px;
+      left: 91px;
+    }
   }
 
   .extra-goods__all-slogan {
@@ -82,6 +156,18 @@
   .extra-goods__inner-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .extra-goods__title {
+    padding: 0;
+
+    &::before {
+      left: 380px;
+    }
+
+    &::after {
+      right: 1260px;
+    }
   }
 
   .extra-goods__list {

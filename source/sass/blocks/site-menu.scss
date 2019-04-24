@@ -12,10 +12,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid #ededed;
 
   &:first-child {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid #ededed;
   }
 }
 
@@ -72,7 +72,7 @@
     }
   }
 
-  .site-menu__item--active .site-menu__link {
+  .site-menu__item--active-white .site-menu__link {
     border-bottom-color: $basic-color;
   }
 }

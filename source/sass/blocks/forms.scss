@@ -1,17 +1,25 @@
-.forms__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+.forms {
+  padding: 30px 0;
 }
 
 .forms__title {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 36px;
   line-height: 60px;
   font-weight: 300;
   text-transform: none;
 }
 
+.forms__title-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .forms__subtitle {
+  margin: 0;
   margin-bottom: 40px;
 
   font-size: 14px;
@@ -19,11 +27,6 @@
 }
 
 @media (min-width: 768px) {
-  .forms__wrapper {
-    width: 768px;
-    padding: 0 30px;
-  }
-
   .forms__title {
     font-size: 60px;
   }
@@ -38,11 +41,6 @@
 }
 
 @media (min-width: 1300px) {
-  .forms__wrapper {
-    width: 1300px;
-    padding: 0 40px;
-  }
-
   .forms__subtitle {
     padding-left: 0;
   }
