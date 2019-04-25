@@ -1,3 +1,7 @@
+.advantages {
+  padding-bottom: 40px;
+}
+
 .advantages__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -35,61 +39,30 @@
     height: 60px;
 
     background-color: $accent-color;
-  }
-
-  &::after {
-    content: "";
-
-    position: absolute;
-
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--1 {
-    &::after {
-      top: 15px;
-      left: 18px;
-
-      width: 26px;
-      height: 29px;
-
+    &::before {
       background-image: url("../img/advantage-leaf@1x.png");
     }
   }
 
   &--2 {
-    &::after {
-      top: 13px;
-      left: 15px;
-
-      width: 30px;
-      height: 32px;
-
+    &::before {
       background-image: url("../img/advantage-powder@1x.png");
     }
   }
 
   &--3 {
-    &::after {
-      top: 15px;
-      left: 18px;
-
-      width: 23px;
-      height: 30px;
-
+    &::before {
       background-image: url("../img/advantage-dining@1x.png");
     }
   }
 
   &--4 {
-    &::after {
-      top: 15px;
-      left: 18px;
-
-      width: 26px;
-      height: 31px;
-
+    &::before {
       background-image: url("../img/advantage-clock@1x.png");
     }
   }
@@ -122,33 +95,41 @@
       height: 80px;
     }
 
+    &::after {
+      position: absolute;
+      bottom: 92px;
+      right: 80px;
+      //
+      // width: 100px;
+      // height: 100px;
+      // border: 1px solid red;
+
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      font-size: 281px;
+      opacity: 0.1;
+    }
+
     &--1 {
       &::after {
-        top: 25px;
-        left: 28px;
+        content: "1";
       }
     }
 
     &--2 {
       &::after {
-        top: 23px;
-        left: 25px;
+        content: "2";
       }
     }
 
     &--3 {
       &::after {
-        top: 25px;
-        left: 28px;
-
-        width: 24px;
+        content: "3";
       }
     }
 
     &--4 {
       &::after {
-        top: 25px;
-        left: 28px;
+        content: "4";
       }
     }
   }
@@ -162,7 +143,7 @@
   .advantages__text {
     width: 246px;
     padding-left: 0;
-    padding-top: 110px;
+    padding-top: 100px;
 
     @include content-text(16px, 24px);
   }
@@ -176,5 +157,9 @@
 
   .advantages__item {
     width: 245px;
+
+    &::after {
+      right: 0;
+    }
   }
 }

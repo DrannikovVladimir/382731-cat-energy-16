@@ -1,6 +1,10 @@
 .extra-good {
   padding: 20px 0;
   border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .extra-good__title {
@@ -11,6 +15,7 @@
 }
 
 .extra-good__list {
+  width: 100%;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -19,17 +24,37 @@
   margin: 0;
 
   @include content-text(14px, 14px);
+
+  &--text-right {
+    text-align: right;
+  }
+}
+
+.extra-good__button {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
+  .extra-good {
+    padding: 27px 35px;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
+  }
+
   .extra-good__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   .extra-good__list {
     margin: 0;
+    width: auto;
   }
 
   .extra-good__title {
@@ -55,8 +80,9 @@
   .extra-good {
     display: flex;
     justify-content: space-between;
-
     padding: 15px 0;
+    border-right: none;
+    border-left: none;
   }
 
   .extra-good__button {
@@ -66,5 +92,6 @@
 
   .extra-good__content {
     width: 610px;
+    margin: 0;
   }
 }

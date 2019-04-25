@@ -1,35 +1,48 @@
-.forms__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+.forms {
+  padding-top: 30px;
+
+  overflow: hidden;
 }
 
 .forms__title {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 36px;
   line-height: 60px;
   font-weight: 300;
   text-transform: none;
 }
 
+.forms__title-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .forms__subtitle {
-  margin-bottom: 40px;
+  margin: 0;
+  padding-bottom: 40px;
 
   font-size: 14px;
   line-height: 18px;
 }
 
 @media (min-width: 768px) {
-  .forms__wrapper {
+  .forms__title-wrapper {
     width: 768px;
     padding: 0 30px;
   }
 
   .forms__title {
+    margin-bottom: 60px;
+
     font-size: 60px;
   }
 
   .forms__subtitle {
     width: 390px;
+    margin-bottom: 30px;
     padding-left: 40px;
 
     font-size: 20px;
@@ -38,9 +51,16 @@
 }
 
 @media (min-width: 1300px) {
-  .forms__wrapper {
+  .forms__container {
     width: 1300px;
+    margin: 0 auto;
     padding: 0 40px;
+  }
+
+  .forms__title-wrapper {
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
 
   .forms__subtitle {

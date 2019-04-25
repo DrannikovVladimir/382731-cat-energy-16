@@ -112,6 +112,11 @@
 }
 
 @media (min-width: 768px) {
+  .compare {
+    background-color: $basic-color;
+    background-image: linear-gradient(to top, $bg-color 460px, $basic-color 460px);
+  }
+
   .compare__wrapper {
     width: 768px;
     padding: 0 30px;
@@ -266,7 +271,7 @@
 
   .compare__control-wrapper {
     position: absolute;
-    bottom: 30px;
+    bottom: -20px;
     right: 40px;
   }
 }

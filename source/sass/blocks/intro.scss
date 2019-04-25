@@ -5,10 +5,10 @@
   color: $basic-color;
   text-align: center;
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 320px, 305px;
+  background-size: 280px 270px;
+  background-position: center bottom 50px;
 }
 
 .intro__wrapper {
@@ -40,8 +40,8 @@
 
 @media (min-width: 768px) {
   .intro {
-    padding-top: 50px;
-    min-height: 840px;
+    padding-top: 30px;
+    min-height: 845px;
 
     text-align: left;
     color: $title-color;
@@ -76,6 +76,8 @@
 
   .intro__button {
     width: 245px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -84,9 +86,7 @@
     padding-top: 120px;
     min-height: 600px;
 
-    background-image: url("../img/index-can-desktop@1x.png");
-    background-position: 550px center;
-    background-size: 552px 499px;
+    background: none;
   }
 
   .intro__wrapper {
