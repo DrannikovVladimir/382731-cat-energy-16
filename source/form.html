@@ -81,28 +81,30 @@
               </div>
             </fieldset>
             <fieldset class="main-form__list-wrapper main-form__list-wrapper--owner">
-              <legend class="main-form__list-title">Контактные данные (владельца кота)</legend>
+              <legend class="main-form__list-title main-form__list-title--contacts">Контактные данные (владельца кота)</legend>
               <ul class="main-form__list list-contacts list-contacts--desktop">
-                <li class="list-contacts__item list-contacts__item--desktop">
-                  <label class="list-contacts__label list-contacts__label--width" for="email-field">e-mail:*</label>
+                <li class="list-contacts__item list-contacts__item--user-contacts list-contacts__item--desktop">
                   <input class="list-contacts__input" id="email-field" type="text" name="email" value="kuklachev@gmail.com">
+                  <label class="list-contacts__label list-contacts__label--width list-contacts__label--user-email" for="email-field">e-mail:*</label>
+
                 </li>
-                <li class="list-contacts__item list-contacts__item--desktop">
-                  <label class="list-contacts__label" for="phone-field">Телефон:*</label>
+                <li class="list-contacts__item list-contacts__item--user-contacts list-contacts__item--desktop">
                   <input class="list-contacts__input" id="phone-field" type="text" name="phone" value="8 (960) 900-60-90">
+                  <label class="list-contacts__label list-contacts__label--user-phone" for="phone-field">Телефон:*</label>
+
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="main-form__list-wrapper">
-              <legend class="main-form__list-title">Комментарий</legend>
+            <fieldset class="main-form__list-wrapper main-form__list-wrapper--comment">
+              <legend class="main-form__list-title main-form__list-title--comment">Комментарий</legend>
               <ul class="main-form__list list-message">
                 <li class="list-message__item">
                   <textarea class="list-message__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="main-form__list-wrapper">
-              <legend class="main-form__list-title">Дополнительно</legend>
+            <fieldset class="main-form__list-wrapper main-form__list-wrapper--more">
+              <legend class="main-form__list-title main-form__list-title--more">Дополнительно</legend>
               <ul class="main-form__list list-check list-check--checkbox">
                 <li class="list-check__item list-check__item--checkbox">
                   <input class="list-check__checkbox visually-hidden" id="sugaSubstitute" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
@@ -122,9 +124,11 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="main-form__list-wrapper main-form__list-wrapper--button">
-              <button class="button main-form__button">Отправить заявку</button>
-              <p class="main-form__required-fields">* — Обязательные поля</p>
+            <div class="main-form__button-container">
+              <div class="main-form__list-wrapper main-form__list-wrapper--button">
+                <button class="button main-form__button">Отправить заявку</button>
+                <p class="main-form__required-fields">* — Обязательные поля</p>
+              </div>
             </div>
           </form>
         </div>
@@ -132,10 +136,10 @@
     </main>
 
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
+      <section class="page-footer__contacts contacts contacts--gray">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts__address-wrapper">
+          <div class="contacts__address-wrapper contacts__address-wrapper--gray">
             <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br class="contacts__address--br-none"><br class="contacts__address--br-none">Санкт-Петербург</address>
           </div>

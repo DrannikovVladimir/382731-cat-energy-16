@@ -37,6 +37,8 @@
 }
 
 .product__item {
+  padding: 0;
+
   @include content-text(12px, 16px);
 
   &--right-text {
