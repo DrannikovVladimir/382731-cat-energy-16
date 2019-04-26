@@ -12,7 +12,7 @@
 }
 
 .intro__wrapper {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -36,6 +36,7 @@
 
 .intro__button {
   width: 100%;
+  max-width: 280px;
 }
 
 @media (min-width: 768px) {
@@ -52,7 +53,8 @@
   }
 
   .intro__wrapper {
-    width: 768px;
+    width: auto;
+    max-width: 960px;
     padding: 0 30px;
   }
 
@@ -91,6 +93,7 @@
 
   .intro__wrapper {
     width: 1300px;
+    max-width: none;
     padding: 0 40px;
   }
 }

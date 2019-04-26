@@ -6,7 +6,8 @@
 }
 
 .extra-goods__wrapper {
-  width: 320px;
+  width: auto;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -88,6 +89,7 @@
 
 @media (min-width: 768px) {
   .extra-goods__wrapper {
+    max-width: none;
     width: 768px;
     padding: 0 30px;
   }

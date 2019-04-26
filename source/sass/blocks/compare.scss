@@ -6,7 +6,8 @@
 }
 
 .compare__wrapper {
-  width: 320px;
+  width: auto;
+  max-width: 550px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -29,6 +30,8 @@
 .compare__list-wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .compare__list {
@@ -118,7 +121,7 @@
   }
 
   .compare__wrapper {
-    width: 768px;
+    max-width: 960px;
     padding: 0 30px;
   }
 
@@ -147,6 +150,8 @@
   }
 
   .compare__list-wrapper {
+    width: auto;
+    margin: 0;
     margin-bottom: 50px;
     align-items: center;
   }
@@ -232,6 +237,7 @@
     position: relative;
 
     width: 1300px;
+    max-width: none;
     padding: 0 40px;
   }
 
