@@ -1,13 +1,14 @@
 .main-nav__toggle-wrapper {
   position: relative;
-  width: 280px;
+  width: auto;
+  max-width: 550px;
   margin: 0 auto;
 }
 
 .main-nav__toggle {
   position: absolute;
   top: -42px;
-  right: 0;
+  right: 20px;
 
   width: 24px;
   height: 18px;
