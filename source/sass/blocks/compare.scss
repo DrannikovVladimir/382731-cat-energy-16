@@ -77,6 +77,8 @@
 
 .compare__image {
   display: block;
+  width: 311px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -180,6 +182,10 @@
     @include content-text(14px, 14px);
   }
 
+  .compare__image {
+    width: 677px;
+  }
+
   .compare__control-wrapper {
     position: relative;
 
@@ -271,8 +277,8 @@
 
   .compare__image {
     position: absolute;
-    top: 0;
-    right: 300px;
+    top: -50px;
+    right: 0;
   }
 
   .compare__control-wrapper {
