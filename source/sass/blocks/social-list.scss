@@ -9,13 +9,15 @@
   list-style: none;
 }
 
+.social-list__icon {
+  fill: #666666;
+}
+
 .social-link {
   &:hover,
   &:focus {
     .social-list__icon {
-      path {
-        fill: $accent-color;
-      }
+      fill: $accent-color;
     }
   }
 

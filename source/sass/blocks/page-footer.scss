@@ -33,6 +33,10 @@
   @include content-text(16px, 16px);
 }
 
+.page-footer__htmlacademy-icon {
+  fill: #666666;
+}
+
 .page-footer__htmlacademy-link {
   display: flex;
   justify-content: space-between;
@@ -42,7 +46,7 @@
 
   &:hover,
   &:focus {
-    .page-footer__htmlacademy-icon path {
+    .page-footer__htmlacademy-icon {
       fill: $accent-color;
     }
   }
